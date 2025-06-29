@@ -12,6 +12,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/modifiers": "^9.0.0",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@tabler/icons-react": "^3.34.0",
+    "@tanstack/react-table": "^8.21.3",
     "@workspace/ui": "workspace:*",
     "axios": "^1.10.0",
     "dayjs": "^1.11.13",
@@ -20,7 +26,10 @@
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swr": "^2.3.3"
+    "recharts": "^3.0.2",
+    "sonner": "^2.0.5",
+    "swr": "^2.3.3",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/node": "^20",

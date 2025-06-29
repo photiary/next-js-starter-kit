@@ -1,11 +1,11 @@
 # Component structure for generate
 
+# AI Agent
+
 ## page.tsx
 
-```
-"use client";
-
+```tsx
 export default function Page() {
-    return <div>**DO NOT generate example code**</div>;
+  return <div>**DO NOT generate example code**</div>;
 }
 ```
