@@ -29,24 +29,27 @@ Ignore the `*.prompt.md` resources defined in `./prompt.ignore`.
     root/
     ├─ apps/
     │  └─ web/
-    │     ├─ app                       # Page components & Layout components
-    │     │  └─ {domain}               # Feature domain (Feature Page, Feature API Call)
-    │     ├─ components                # Business logic common components
-    │     ├─ hooks
-    │     └─ lib                       # Utils
-    │         ├─ api.ts                # Axios
-    │         └─ axiosInstances.ts
+    │     ├─ app/                       # Page components & Layout components
+    │     │  └─ {domain}/               # Feature domain (Feature Page, Feature API Call)
+    │     ├─ components/                # Business logic common components
+    │     ├─ hooks/
+    │     └─ lib/                       # Utils
     └─ packages/
+       ├─ core/
+       │  └─ src/
+       │     └─ lib/
+       │        ├─ api.ts                # Axios
+       │        └─ axiosInstances.ts
        └─ ui/
           └─ src/
-             └─ components/        # UI Common components (shadcn/ui) and None business components
+             └─ components/              # UI Common components (shadcn/ui) and None business components
     ```
 
 ### Layered Architecture
 
 The application follows a strict layered architecture with a clear flow of control
 
-- **API call Layer**: Backend Http request API call, use the Axios defined in `../apps/web/lib/api.ts`
+- **API call Layer**: Backend Http request API call, use the Axios defined in `./packages/core/src/api/api.ts`
 - **Service Component Layer**: Acts as an intermediary between the API call layer and the UI component layer, handling business logic, data transformation, validation.
 - **UI Component Layer**: Contains the visual components presented to users, including buttons, forms, and layouts.
   **DO NOT access API Layer**

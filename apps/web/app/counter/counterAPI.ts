@@ -1,5 +1,5 @@
 // **DO NOT EDIT. This is a template resource.**
-import { publicApi } from "@/lib/api";
+import { publicApi } from "@workspace/core/api";
 
 export interface Count {
   amount: number;
