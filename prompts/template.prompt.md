@@ -1,8 +1,10 @@
 # Component structure for generate
 
+# AI Agent
+
 ## page.tsx
 
-```
+```tsx
 "use client";
 
 export default function Page() {
