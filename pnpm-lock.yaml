@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@workspace/core':
-        specifier: workspace:*
-        version: link:packages/core
       '@workspace/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
