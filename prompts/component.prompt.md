@@ -24,3 +24,10 @@
 
 - `./packages/ui/src/components/**`에 생성하는 UI Component는 `{ComponentName}.stories.ts`으로 Storybook을 생성한다.
 - 리소스 구조는 `./packages/ui/src/components/button.stories.ts`를 참조한다.
+
+## 2. Common Feature
+
+- Component 리소스에 `$feature$` 문자열은 지시 사양에 맞게 수정한다.
+- Confirm Dialog는 `<Dialog>`를 사용한다.
+- 등록, 수정 이벤트는 `Sonner`를 사용한다. 메시지: '$feature$를 등록했습니다.', '$feature$를 수정했습니다.'
+- 삭제 이벤트는 Confirm Dialog를 표시한다. 메시지: '$feature$를 삭제하시겠습니까?'
