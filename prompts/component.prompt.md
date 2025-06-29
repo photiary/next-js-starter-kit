@@ -9,9 +9,11 @@
 
 ### Page Component Layer
 
-- Component의 기본 구조는 `./template.prompt.md`의 `page.tsx`를 따른다.
+- Component의 기본 구조는 `./apps/web/app/counter/info/page.tsx`를 따른다.
 
 ### Service Component Layer
+
+- 
 
 ### UI Component Layer
 

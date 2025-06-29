@@ -1,10 +1,10 @@
 import React from "react";
 
-import { AppSidebar } from "@/components/app-sidebar";
-import { ChartAreaInteractive } from "@/components/chart-area-interactive";
-import { DataTable } from "@/components/data-table";
-import { SectionCards } from "@/components/section-cards";
-import { SiteHeader } from "@/components/site-header";
+import { AppSidebar } from "@/components/template/app-sidebar.tsx";
+import { ChartAreaInteractive } from "@/components/template/chart-area-interactive.tsx";
+import { DataTable } from "@/components/template/data-table.tsx";
+import { SectionCards } from "@/components/template/section-cards.tsx";
+import { SiteHeader } from "@/components/template/site-header.tsx";
 import {
   SidebarInset,
   SidebarProvider,

@@ -9,7 +9,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@workspace/ui/components/sidebar";
+} from "@workspace/ui/components/sidebar.tsx";
 
 export function NavSecondary({
   items,

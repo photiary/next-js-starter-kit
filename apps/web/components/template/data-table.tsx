@@ -53,16 +53,16 @@ import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import { toast } from "sonner";
 import { z } from "zod";
 
-import { useIsMobile } from "@/hooks/use-mobile";
-import { Badge } from "@workspace/ui/components/badge";
-import { Button } from "@workspace/ui/components/button";
+import { useIsMobile } from "@/hooks/use-mobile.ts";
+import { Badge } from "@workspace/ui/components/badge.tsx";
+import { Button } from "@workspace/ui/components/button.tsx";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@workspace/ui/components/chart";
-import { Checkbox } from "@workspace/ui/components/checkbox";
+} from "@workspace/ui/components/chart.tsx";
+import { Checkbox } from "@workspace/ui/components/checkbox.tsx";
 import {
   Drawer,
   DrawerClose,
@@ -72,7 +72,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@workspace/ui/components/drawer";
+} from "@workspace/ui/components/drawer.tsx";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -80,17 +80,17 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@workspace/ui/components/dropdown-menu";
-import { Input } from "@workspace/ui/components/input";
-import { Label } from "@workspace/ui/components/label";
+} from "@workspace/ui/components/dropdown-menu.tsx";
+import { Input } from "@workspace/ui/components/input.tsx";
+import { Label } from "@workspace/ui/components/label.tsx";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@workspace/ui/components/select";
-import { Separator } from "@workspace/ui/components/separator";
+} from "@workspace/ui/components/select.tsx";
+import { Separator } from "@workspace/ui/components/separator.tsx";
 import {
   Table,
   TableBody,
@@ -98,13 +98,13 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@workspace/ui/components/table";
+} from "@workspace/ui/components/table.tsx";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@workspace/ui/components/tabs";
+} from "@workspace/ui/components/tabs.tsx";
 
 export const schema = z.object({
   id: z.number(),
