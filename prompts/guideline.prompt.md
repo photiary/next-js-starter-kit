@@ -47,9 +47,9 @@ Ignore the `*.prompt.md` resources defined in `./prompt.ignore`.
 The application follows a strict layered architecture with a clear flow of control
 
 - **API call Layer**: Backend Http request API call, use the Axios defined in `../apps/web/lib/api.ts`
+- **Service Component Layer**: Acts as an intermediary between the API call layer and the UI component layer, handling business logic, data transformation, validation.
 - **UI Component Layer**: Contains the visual components presented to users, including buttons, forms, and layouts.
   **DO NOT access API Layer**
-- **Service Component Layer**: Acts as an intermediary between the API call layer and the UI component layer, handling business logic, data transformation, validation.
 
 The flow of control should always follow the pattern:
 

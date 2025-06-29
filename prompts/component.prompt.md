@@ -7,13 +7,16 @@
 
 ### Layout Component Layer
 
+- **DO NOT access API Layer**
+
 ### Page Component Layer
 
 - Component의 기본 구조는 `./apps/web/app/counter/info/page.tsx`를 따른다.
+- 필요에 따라 API를 호출한다.
 
 ### Service Component Layer
 
-- 
+- `./apps/web/components/template/**`에 있는 Template component를 참조한다.
 
 ### UI Component Layer
 

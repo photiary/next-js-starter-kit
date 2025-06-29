@@ -1,3 +1,4 @@
+// **DO NOT EDIT. This is a template resource.**
 import React from "react";
 
 import { AppSidebar } from "@/components/template/app-sidebar.tsx";

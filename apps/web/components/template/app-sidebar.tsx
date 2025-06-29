@@ -32,6 +32,9 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@workspace/ui/components/sidebar.tsx";
+import { fetchCount } from "@/app/counter/counterAPI.ts";
+import { useEffect, useState } from "react";
+import { Badge } from "@workspace/ui/components/badge.tsx";
 
 const data = {
   user: {
@@ -151,6 +154,20 @@ const data = {
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    const handleGetCount = async () => {
+      try {
+        const data = await fetchCount(1);
+        setCounter(data.amount);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    handleGetCount();
+  }, [counter]);
+
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
@@ -163,6 +180,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <a href="#">
                 <IconInnerShadowTop className="!size-5" />
                 <span className="text-base font-semibold">Acme Inc.</span>
+                <Badge variant="destructive">{counter}</Badge>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
