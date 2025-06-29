@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@workspace/core':
+        specifier: workspace:*
+        version: link:packages/core
       '@workspace/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
@@ -44,6 +47,9 @@ importers:
       '@tanstack/react-table':
         specifier: ^8.21.3
         version: 8.21.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@workspace/core':
+        specifier: workspace:*
+        version: link:../../packages/core
       '@workspace/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -96,6 +102,25 @@ importers:
       '@workspace/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+
+  packages/core:
+    dependencies:
+      axios:
+        specifier: ^1.10.0
+        version: 1.10.0
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.17.19
+      '@workspace/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@workspace/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
