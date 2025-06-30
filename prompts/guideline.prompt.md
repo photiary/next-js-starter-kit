@@ -49,16 +49,17 @@ Ignore the `*.prompt.md` resources defined in `./prompt.ignore`.
 
 The application follows a strict layered architecture with a clear flow of control
 
-- **API call Layer**: Backend Http request API call, use the Axios defined in `./packages/core/src/api/api.ts`
+- **API call Layer**: Backend Http request API call, use the Axios defined in `../packages/core/src/api/api.ts`
 - **Service Component Layer**: Acts as an intermediary between the API call layer and the UI component layer, handling business logic, data transformation, validation.
 - **UI Component Layer**: Contains the visual components presented to users, including buttons, forms, and layouts.
   **DO NOT access API Layer**
 
 The flow of control should always follow the pattern:
 
-1. This file: `./prompts/guideline.prompt.md`
-2. API call Layer: `./prompts/api.prompt.md`
-3. Component Layer: `./prompts/component.prompt.md`
+1. This file: `./guideline.prompt.md`
+2. API call Layer: `./api.prompt.md`
+3. Component Layer: `./component.prompt.md`
+4. Theme: `./theming.prompt.md`
 
 ## Common Rules
 
