@@ -1,25 +1,22 @@
 // **DO NOT EDIT. This is a template resource.**
-import React from "react";
+import React from 'react'
 
-import { AppSidebar } from "@/components/template/app-sidebar.tsx";
-import { ChartAreaInteractive } from "@/components/template/chart-area-interactive.tsx";
-import { DataTable } from "@/components/template/data-table.tsx";
-import { SectionCards } from "@/components/template/section-cards.tsx";
-import { SiteHeader } from "@/components/template/site-header.tsx";
-import {
-  SidebarInset,
-  SidebarProvider,
-} from "@workspace/ui/components/sidebar";
+import { AppSidebar } from '@/components/template/app-sidebar.tsx'
+import { ChartAreaInteractive } from '@/components/template/chart-area-interactive.tsx'
+import { DataTable } from '@/components/template/data-table.tsx'
+import { SectionCards } from '@/components/template/section-cards.tsx'
+import { SiteHeader } from '@/components/template/site-header.tsx'
+import { SidebarInset, SidebarProvider } from '@workspace/ui/components/sidebar'
 
-import data from "./data.json";
+import data from './data.json'
 
 export default function Page() {
   return (
     <SidebarProvider
       style={
         {
-          "--sidebar-width": "calc(var(--spacing) * 72)",
-          "--header-height": "calc(var(--spacing) * 12)",
+          '--sidebar-width': 'calc(var(--spacing) * 72)',
+          '--header-height': 'calc(var(--spacing) * 12)',
         } as React.CSSProperties
       }
     >
@@ -39,5 +36,5 @@ export default function Page() {
         </div>
       </SidebarInset>
     </SidebarProvider>
-  );
+  )
 }

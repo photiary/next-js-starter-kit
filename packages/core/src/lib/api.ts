@@ -1,4 +1,4 @@
-import { publicInstance } from "./axiosInstances";
+import { publicInstance } from './axiosInstances'
 
 // For unauthenticated requests
-export const publicApi = publicInstance;
+export const publicApi = publicInstance
