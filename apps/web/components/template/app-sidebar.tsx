@@ -32,7 +32,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@workspace/ui/components/sidebar.tsx";
-import { fetchCount } from "@/app/counter/counterAPI.ts";
+import { fetchCount } from "@/app/template/counterAPI.ts";
 import { useEffect, useState } from "react";
 import { Badge } from "@workspace/ui/components/badge.tsx";
 

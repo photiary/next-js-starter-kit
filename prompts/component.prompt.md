@@ -11,7 +11,7 @@
 
 ### Page Component Layer
 
-- Component의 기본 구조는 `../apps/web/app/counter/info/page.tsx`를 따른다.
+- Component의 기본 구조는 `../apps/web/app/template/info/page.tsx`를 따른다.
 - 필요에 따라 API를 호출한다.
 
 ### Service Component Layer
