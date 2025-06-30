@@ -11,5 +11,5 @@
   - 등록 POST: 'post'
   - 수정 PUT: 'put'
   - 삭제 DELETE: 'delete'
-- 리소스 구조 `../apps/web/app/couter/counterAPI.ts`를 참조하여 JSDoc 주석과 API function을 생성한다.
+- 리소스 구조 `../apps/web/app/template/counterAPI.ts`를 참조하여 JSDoc 주석과 API function을 생성한다.
 - 최우선으로 '1. Basic rules'를 반드시 준수한다.
