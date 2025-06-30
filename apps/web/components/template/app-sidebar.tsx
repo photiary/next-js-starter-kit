@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import * as React from "react";
+import * as React from 'react'
 import {
   IconCamera,
   IconChartBar,
@@ -17,12 +17,12 @@ import {
   IconSearch,
   IconSettings,
   IconUsers,
-} from "@tabler/icons-react";
+} from '@tabler/icons-react'
 
-import { NavDocuments } from "@/components/template/nav-documents.tsx";
-import { NavMain } from "@/components/template/nav-main.tsx";
-import { NavSecondary } from "@/components/template/nav-secondary.tsx";
-import { NavUser } from "@/components/template/nav-user.tsx";
+import { NavDocuments } from '@/components/template/nav-documents.tsx'
+import { NavMain } from '@/components/template/nav-main.tsx'
+import { NavSecondary } from '@/components/template/nav-secondary.tsx'
+import { NavUser } from '@/components/template/nav-user.tsx'
 import {
   Sidebar,
   SidebarContent,
@@ -31,152 +31,149 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@workspace/ui/components/sidebar.tsx";
-import { fetchCount } from "@/app/template/counterAPI.ts";
-import { useEffect, useState } from "react";
-import { Badge } from "@workspace/ui/components/badge.tsx";
+} from '@workspace/ui/components/sidebar.tsx'
+import { fetchCount } from '@/app/template/counterAPI.ts'
+import { useEffect, useState } from 'react'
+import { Badge } from '@workspace/ui/components/badge.tsx'
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: 'shadcn',
+    email: 'm@example.com',
+    avatar: '/avatars/shadcn.jpg',
   },
   navMain: [
     {
-      title: "Dashboard",
-      url: "#",
+      title: 'Dashboard',
+      url: '#',
       icon: IconDashboard,
     },
     {
-      title: "Lifecycle",
-      url: "#",
+      title: 'Lifecycle',
+      url: '#',
       icon: IconListDetails,
     },
     {
-      title: "Analytics",
-      url: "#",
+      title: 'Analytics',
+      url: '#',
       icon: IconChartBar,
     },
     {
-      title: "Projects",
-      url: "#",
+      title: 'Projects',
+      url: '#',
       icon: IconFolder,
     },
     {
-      title: "Team",
-      url: "#",
+      title: 'Team',
+      url: '#',
       icon: IconUsers,
     },
   ],
   navClouds: [
     {
-      title: "Capture",
+      title: 'Capture',
       icon: IconCamera,
       isActive: true,
-      url: "#",
+      url: '#',
       items: [
         {
-          title: "Active Proposals",
-          url: "#",
+          title: 'Active Proposals',
+          url: '#',
         },
         {
-          title: "Archived",
-          url: "#",
+          title: 'Archived',
+          url: '#',
         },
       ],
     },
     {
-      title: "Proposal",
+      title: 'Proposal',
       icon: IconFileDescription,
-      url: "#",
+      url: '#',
       items: [
         {
-          title: "Active Proposals",
-          url: "#",
+          title: 'Active Proposals',
+          url: '#',
         },
         {
-          title: "Archived",
-          url: "#",
+          title: 'Archived',
+          url: '#',
         },
       ],
     },
     {
-      title: "Prompts",
+      title: 'Prompts',
       icon: IconFileAi,
-      url: "#",
+      url: '#',
       items: [
         {
-          title: "Active Proposals",
-          url: "#",
+          title: 'Active Proposals',
+          url: '#',
         },
         {
-          title: "Archived",
-          url: "#",
+          title: 'Archived',
+          url: '#',
         },
       ],
     },
   ],
   navSecondary: [
     {
-      title: "Settings",
-      url: "#",
+      title: 'Settings',
+      url: '#',
       icon: IconSettings,
     },
     {
-      title: "Get Help",
-      url: "#",
+      title: 'Get Help',
+      url: '#',
       icon: IconHelp,
     },
     {
-      title: "Search",
-      url: "#",
+      title: 'Search',
+      url: '#',
       icon: IconSearch,
     },
   ],
   documents: [
     {
-      name: "Data Library",
-      url: "#",
+      name: 'Data Library',
+      url: '#',
       icon: IconDatabase,
     },
     {
-      name: "Reports",
-      url: "#",
+      name: 'Reports',
+      url: '#',
       icon: IconReport,
     },
     {
-      name: "Word Assistant",
-      url: "#",
+      name: 'Word Assistant',
+      url: '#',
       icon: IconFileWord,
     },
   ],
-};
+}
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0)
 
   useEffect(() => {
     const handleGetCount = async () => {
       try {
-        const data = await fetchCount(1);
-        setCounter(data.amount);
+        const data = await fetchCount(1)
+        setCounter(data.amount)
       } catch (error) {
-        console.error(error);
+        console.error(error)
       }
-    };
-    handleGetCount();
-  }, [counter]);
+    }
+    handleGetCount()
+  }, [counter])
 
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton
-              asChild
-              className="data-[slot=sidebar-menu-button]:!p-1.5"
-            >
+            <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5">
               <a href="#">
                 <IconInnerShadowTop className="!size-5" />
                 <span className="text-base font-semibold">Acme Inc.</span>
@@ -195,5 +192,5 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavUser user={data.user} />
       </SidebarFooter>
     </Sidebar>
-  );
+  )
 }
