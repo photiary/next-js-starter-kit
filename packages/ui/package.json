@@ -57,6 +57,8 @@
   "exports": {
     "./globals.css": "./src/styles/globals.css",
     "./mocha-mousse.css": "./src/styles/mocha-mousse.css",
+    "./turquoise.css": "./src/styles/turquoise.css",
+    "./rose-serenity.css": "./src/styles/rose-serenity.css",
     "./postcss.config": "./postcss.config.mjs",
     "./lib/*": "./src/lib/*.ts",
     "./components/*": "./src/components/*.tsx",
