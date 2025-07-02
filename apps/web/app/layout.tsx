@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Geist, Geist_Mono } from 'next/font/google'
-import '@workspace/ui/globals.css'
+import '@workspace/ui/mocha-mousse.css'
 import { Providers } from '@/components/providers'
 
 const fontSans = Geist({
